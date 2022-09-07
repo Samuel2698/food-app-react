@@ -44,3 +44,7 @@
   z-index: 5;
   cursor: pointer;
 }
+
+.active {
+  position: absolute;
+}
