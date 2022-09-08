@@ -1,9 +1,9 @@
 .navbar {
   width: 100%;
   height: 80px;
-  border-bottom: 1px solid #333;
   position: fixed;
   z-index: 2;
+  border-bottom: 1px solid #333;
 }
 
 .navbar .container {
@@ -41,10 +41,46 @@
 }
 
 .hamburger {
-  z-index: 5;
   cursor: pointer;
+  z-index: 5;
 }
 
 .active {
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
   position: absolute;
+  z-index: 5;
+  transition-duration: 0.8s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu.active li {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.nav-menu.active li:hover {
+  color: var(--primary-color);
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 740px) {
+  .navbar .nav-menu {
+    position: absolute;
+    left: -200%;
+  }
+  .navbar .active {
+    left: 0;
+  }
 }
