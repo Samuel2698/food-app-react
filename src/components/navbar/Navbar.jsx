@@ -4,10 +4,21 @@ import "./NavbarStyles.css";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [color, setColor] = useState(false);
   const handleNav = () => setNav(!nav);
 
+  const changeColor = () => {
+    if (window.scrollY >= 100) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeColor);
+
   return (
-    <div className="navbar">
+    <div className={color ? "navbar navbar-bg" : "navbar"}>
       <div className="container">
         <div className="logo">
           <FaHamburger size={40} style={{ marginLeft: "4px" }} />

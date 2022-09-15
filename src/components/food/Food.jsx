@@ -4,9 +4,7 @@ import "./FoodStyles.css";
 const Food = (props) => {
   return (
     <div
-      style={{
-        background: `url('${props.bgImg}') no-repeat center/cover`,
-      }}
+      style={{ background: `url('${props.bgImg}') no-repeat center/cover` }}
       className="food"
     >
       <div className="container">
