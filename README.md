@@ -1,3 +1,3 @@
 # food-app-react
 
-Application Burger Roi
+Food App créée avec React JS et CSS.
