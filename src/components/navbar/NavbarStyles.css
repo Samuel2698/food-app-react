@@ -57,7 +57,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition-duration: 0.4s;
+  transition-duration: 0.8s;
 }
 
 .nav-menu.active li {
@@ -84,6 +84,6 @@
     left: 0;
     /**Comme sur YouTube: */
     /* width: 40vw;
-        height: 100vh; */
+    height: 100vh; */
   }
 }
